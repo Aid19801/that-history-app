@@ -5,11 +5,25 @@ import * as actions from './constants';
 
 class HomePage extends Component {
 
+    componentWillMount = () => {
+        this.props.pageLoading();
+    }
+
     componentDidMount = () => {
       this.props.pageLoaded();
     }
     
     render() {
+
+        if (this.props.isLoading) {
+            console.log('loading...')
+            return (
+                <View>
+                    <Text>Loading...</Text>
+                </View>
+            )
+        }
+        console.log('loaded.')
         return (
             <View>
                 <Text>i am homepage</Text>
@@ -24,6 +38,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
+    pageLoading: () => dispatch({ type: actions.HOME_LOADING }),
     pageLoaded: () => dispatch({ type: actions.HOME_LOADED }),
 })
 

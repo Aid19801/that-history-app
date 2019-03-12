@@ -1,3 +1,4 @@
+import * as actions from './constants';
 
 const initialState = {
     isLoading: false,
@@ -6,19 +7,19 @@ const initialState = {
 
 const homePageReducer = (state = initialState, action) => {
     switch(action.type) {
-        case 'HOME_LOADING':
+        case actions.HOME_LOADING:
             return {
                 ...state,
                 isLoading: true,
             }
             break;
-        case 'HOME_LOADED':
+        case actions.HOME_LOADED:
             return {
                 ...state,
                 isLoading: false,
             }
             break;
-        case 'HOME_FAILED':
+        case actions.HOME_FAILED:
             return {
                 ...state,
                 isLoading: false,
