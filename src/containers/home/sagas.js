@@ -7,5 +7,5 @@ export function* watcherHomePage() {
 }
 
 export function* workerHomePage() {
-    console.log('worker home page fired...');
+    console.log('worker saga fired...');
 }

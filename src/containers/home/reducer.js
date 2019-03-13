@@ -26,8 +26,7 @@ const homePageReducer = (state = initialState, action) => {
                 error: action.error,
             }
             break;
-
-
+            
         default:
             return state;
             break;
