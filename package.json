@@ -7,7 +7,11 @@
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.55.4",
-    "react-native-geolocation-service": "^2.0.0"
+    "react-native-geolocation-service": "^2.0.0",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.2"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"

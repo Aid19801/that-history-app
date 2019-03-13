@@ -1,15 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-redux';
+import HomePage from './src/containers/home';
+import store from './redux/store';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text>FFS!!!!!!!</Text>
-      </View>
-    );
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <HomePage />
+  </Provider>
+)
 
-const styles = StyleSheet.create({
-});
+export default App;
