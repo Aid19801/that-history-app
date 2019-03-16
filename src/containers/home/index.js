@@ -30,7 +30,7 @@ class HomePage extends Component {
 
         return (
             <View>
-                <Text>I AM A GOD DAMN HOME PAGE</Text>
+                <Text>That History App</Text>
 
                 <View style={{ borderWidth: 2, marginTop: 20, borderColor: 'black', height: '80%', width: '100%' }}>
                     
