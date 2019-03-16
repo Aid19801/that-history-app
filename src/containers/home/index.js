@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native';
 import { connect } from 'react-redux';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+
 import * as actions from './constants';
 
 class HomePage extends Component {
@@ -23,10 +25,26 @@ class HomePage extends Component {
                 </View>
             )
         }
-        console.log('loaded.')
+        console.log('loaded!');
         return (
             <View>
                 <Text>i am homepage</Text>
+
+                <View style={{ borderWidth: 4, borderColor: 'red', height: '80%' }}>
+                    
+                    <MapView
+                        provider={PROVIDER_GOOGLE}
+                        style={{flex: 1}}
+                        region={{
+                        latitude: 42.882004,
+                        longitude: 74.582748,
+                        latitudeDelta: 0.0922,
+                        longitudeDelta: 0.0421
+                        }}
+                        showsUserLocation={true}
+                    />
+                </View>
+
             </View>
         )
     }

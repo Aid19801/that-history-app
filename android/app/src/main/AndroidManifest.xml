@@ -2,6 +2,7 @@
     package="com.myapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
@@ -11,6 +12,13 @@
       android:icon="@mipmap/ic_launcher"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+
+        <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="systemProp.gradle.api.THAT_HISTORY_APP_MAP_API" />
+
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
