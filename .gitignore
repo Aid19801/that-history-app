@@ -2,8 +2,6 @@
 #
 .DS_Store
 poo.js
-android/*
-ios/*
 
 # Xcode
 #
@@ -29,8 +27,8 @@ project.xcworkspace
 #
 android/app/build/
 android/.idea
-.gradle
-local.properties
+android/.gradle
+android/local.properties
 *.iml
 
 # node.js
