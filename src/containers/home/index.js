@@ -28,18 +28,18 @@ class HomePage extends Component {
         console.log('loaded!');
         return (
             <View>
-                <Text>i am homepage</Text>
+                <Text>I AM A GOD DAMN HOME PAGE</Text>
 
-                <View style={{ borderWidth: 4, borderColor: 'red', height: '80%' }}>
+                <View style={{ borderWidth: 4, marginTop: 20, borderColor: 'black', height: '80%' }}>
                     
                     <MapView
                         provider={PROVIDER_GOOGLE}
                         style={{flex: 1}}
                         region={{
-                        latitude: 42.882004,
-                        longitude: 74.582748,
-                        latitudeDelta: 0.0922,
-                        longitudeDelta: 0.0421
+                        latitude: 51.5074,
+                        longitude: 0.1278,
+                        latitudeDelta: 0.05,
+                        longitudeDelta: 0.05
                         }}
                         showsUserLocation={true}
                     />
