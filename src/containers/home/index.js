@@ -30,24 +30,25 @@ class HomePage extends Component {
 
         return (
             <View>
-                <Text>That History App</Text>
+                <Text style={{ marginTop: 20}}>That History App 🎉</Text>
 
                 <View style={{ borderWidth: 2, marginTop: 20, borderColor: 'black', height: '80%', width: '100%' }}>
                     
                     <MapView
                         provider={PROVIDER_GOOGLE}
+                        followsUserLocation={true}
+                        showsUserLocation={true}
                         style={{flex: 1}}
                         region={{
                         latitude: 51.4718,
                         longitude: -0.0749,
-                        latitudeDelta: 0.02,
-                        longitudeDelta: 0.02
+                        latitudeDelta: 0.01,
+                        longitudeDelta: 0.01
                         }}
-                        showsUserLocation={true}
                     >
                         { markers.map((each, i) => {
                             console.log('each: ', each);
-                            return (
+                            return ( 
                                 <MapView.Marker
                                     key={i}
                                     title={each.title}
