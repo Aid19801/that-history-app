@@ -1,4 +1,4 @@
-#Fri Mar 15 13:00:21 GMT 2019
-base.0=/Users/adrianthompson/Documents/me/history/android/app/build/intermediates/transforms/dexMerger/debug/2
+#Sat Mar 16 08:55:08 GMT 2019
+base.0=/Users/adrianthompson/Documents/me/react-native-redux-boilerplate/android/app/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex

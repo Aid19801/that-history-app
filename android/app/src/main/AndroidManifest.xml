@@ -16,7 +16,7 @@
 
         <meta-data
         android:name="com.google.android.geo.API_KEY"
-        android:value="systemProp.gradle.api.THAT_HISTORY_APP_MAP_API" />
+        android:value="AIzaSyAX2WpYNzO0HGSfI7REsqDsTNiXaYDFKjU" />
 
 
       <activity

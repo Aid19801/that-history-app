@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/adrianthompson/Documents/me/history/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "outputFile": "/Users/adrianthompson/Documents/me/react-native-redux-boilerplate/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
             "map": [
                 {
                     "source": "/Users/adrianthompson/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e3a3154c0d3879380c9b822ebafa17bb/res/values-ky/values.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/adrianthompson/Documents/me/history/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
+            "outputFile": "/Users/adrianthompson/Documents/me/react-native-redux-boilerplate/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "/Users/adrianthompson/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/4c2d17650a152319bcb246b94e0ef32e/res/values-ka/values-ka.xml",
