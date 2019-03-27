@@ -6,6 +6,18 @@ export const markers = [
             subtitle: 'Peckham Rye Stuff is Here and Things...'
         },
         {
+            latitude: 51.47036,
+            longitude: -0.07382,
+            title: 'Lyndhurst Way',
+            subtitle: 'Lyndhurst Way Stuff is Here and Things...'
+        },
+        {
+            latitude: 51.47186,
+            longitude: -0.07513,
+            title: '10 Lyndhurst Sq',
+            subtitle: 'Further down LW'
+        },
+        {
             latitude: 51.4620,
             longitude: -0.0686,
             title: 'East Dulwich Rd',

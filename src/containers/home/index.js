@@ -24,6 +24,7 @@ class HomePage extends Component {
                 long: LONDON_LONG
             }
         }
+        this.map = null;
     }
 
     getUserLocation = async () => {
@@ -48,13 +49,10 @@ class HomePage extends Component {
     componentDidMount = () => {
       this.props.pageLoaded();
 
-
-    //   this.getUserLocation();
-
       setInterval(() => {
         this.getUserLocation();
         console.log('updated location')
-      }, 3000);
+      }, 20000);
     }
     
     render() {
@@ -75,10 +73,11 @@ class HomePage extends Component {
                 <View style={{ borderWidth: 2, marginTop: 20, borderColor: 'black', height: '80%', width: '100%' }}>
                     
                     <MapView
+                        ref={(map) => this.map = map}
                         provider={PROVIDER_GOOGLE}
                         followsUserLocation={true}
                         showsUserLocation={true}
-                        style={{flex: 1}}
+                        style={{ flex: 1 }}
                         region={{
                         latitude: 51.4718,
                         longitude: -0.0749,
@@ -91,23 +90,19 @@ class HomePage extends Component {
                             return ( 
                                 <MapView.Marker
                                     key={i}
-                                    title={each.title}
-                                    description={each.description}
+                                    title="ME!"
+                                    description="i am here"
                                     coordinate={{ latitude: each.latitude, longitude: each.longitude }}
+                                >
+                                    <Image
+                                        style={{width: 40, height: 40}}
+                                        source={{uri: 'http://freevector.co/wp-content/uploads/2009/08/24029-profile-user-silhouette1.png'}}
                                     />
+                                </MapView.Marker>
                             )
                         }) }
 
-                        <MapView.Marker
-                            title="ME!"
-                            description="i am here"
-                            coordinate={{ latitude: this.state.userLocation.lat, longitude: this.state.userLocation.long }}
-                        >
-                            <Image
-                                style={{width: 20, height: 20}}
-                                source={{uri: 'http://freevector.co/wp-content/uploads/2009/08/24029-profile-user-silhouette1.png'}}
-                            />
-                        </MapView.Marker>
+                        
 
                     </MapView>
                 </View>
